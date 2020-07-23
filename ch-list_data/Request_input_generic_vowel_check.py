@@ -38,9 +38,9 @@ for ch in found_vowels:
 ##################################################################
 
 #Generic word check Input request from user
-word7=input("Please enter the word of your choice")
-word8=input("Please enter the word of your choice")
-word9=input("Please enter the word of your choice")
+word7=input("Please enter the word of your choice: ")
+word8=input("Please enter the word of your choice: ")
+word9=input("Please enter the word of your choice: ")
 vowel_prompted=['a','e','i','o','u']
 words_list_prompted = [word7, word8, word9]
 
