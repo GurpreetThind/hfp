@@ -29,4 +29,7 @@ for words in list_of_words:
                 found_vowels.append(letter)
 
 print(found_vowels)
+
+for ch in found_vowels:
+    print(ch)
 #            print(words, 'has vowel', letter )

@@ -1,0 +1,30 @@
+#List to add objects dynamically via append method
+
+>>> found = []
+>>> len(found)
+0
+>>> 
+>>> 
+>>> found.append("a"); found.append('e'); found.append("i"); found.append("o"); found.append('u');
+>>> len(found)
+5
+>>> 
+>>> 
+>>> found
+['a', 'e', 'i', 'o', 'u']
+
+
+['a', 'e', 'i', 'o', 'u']
+>>> if 'u' not in found:
+	found.append('u')
+	
+>>> found
+['a', 'e', 'i', 'o', 'u']
+
+
+>>> if 'k' not in found:
+	found.append('k')
+
+	
+>>> found
+['a', 'e', 'i', 'o', 'u', 'k']
