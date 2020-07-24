@@ -1,0 +1,48 @@
+================================================
+#Remove Method
+================================================
+
+>>> nums = [1,2,3,4]
+>>> nums
+[1, 2, 3, 4]
+>>> nums.remove(3)
+>>> nums
+[1, 2, 4]
+>>> 
+>>> 
+>>> nums.remove(3)
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    nums.remove(3)
+ValueError: list.remove(x): x not in list
+
+# Remove removes the value not the index
+
+================================================
+#Pop Method
+================================================
+
+>>> nums
+[1, 2, 4, 'a', 'b']
+>>> 
+
+>>> nums.pop(4)
+'b'
+
+#pop index out of range as the index is no more available 
+>>> x=nums.pop(4)
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    x=nums.pop(4)
+IndexError: pop index out of range
+>>> x=nums.pop(2)
+>>> x
+4
+#Without index pops the last item in list
+>>> nums
+[1, 2, 'a']
+>>> l=nums.pop()
+>>> nums
+[1, 2]
+>>> l
+'a'
