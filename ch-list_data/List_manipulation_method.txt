@@ -38,6 +38,7 @@ IndexError: pop index out of range
 >>> x=nums.pop(2)
 >>> x
 4
+
 #Without index pops the last item in list
 >>> nums
 [1, 2, 'a']
@@ -46,3 +47,41 @@ IndexError: pop index out of range
 [1, 2]
 >>> l
 'a'
+
+====================================================
+#Extend Method : Adds a list of objects to the list
+====================================================
+
+>>> nums
+[1, 2]
+>>> nums.extend([3,4])
+>>> nums
+[1, 2, 3, 4]
+>>> 
+>>> 
+>>> nums.extend([])
+>>> 
+>>> nums
+[1, 2, 3, 4]
+>>> nums.append([])
+>>> nums
+[1, 2, 3, 4, []]
+>>> 
+
+>>> 
+>>> nums.pop()
+[]
+>>> 
+>>> 
+>>> nums
+[1, 2, 3, 4]
+
+====================================================
+#Inserting Method : Adds a list of objects to the list
+====================================================
+
+>>> nums.insert(2,"two-and-half")
+>>> 
+>>> 
+>>> nums
+[1, 2, 'two-and-half', 3, 4]
