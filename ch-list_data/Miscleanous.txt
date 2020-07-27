@@ -1,0 +1,8 @@
+For String + does concatenation
+
+print('\t',"tab before printing")
+#\t prints tab 
+
+Multiplicating operation : It multiplies the tab by the factor . Use * # to multiply by #.
+print('\t'*3,character)
+This prints three tabs before printing object character
