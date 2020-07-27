@@ -1,0 +1,93 @@
+============================================
+Convert string to list of objects
+============================================
+
+
+>>> aphrase="Won't you understand how this works?"
+>>> aphrase
+"Won't you understand how this works?"
+>>> alist=list(aphrase)
+>>> alist
+['W', 'o', 'n', "'", 't', ' ', 'y', 'o', 'u', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd', ' ', 'h', 'o', 'w', ' ', 't', 'h', 'i', 's', ' ', 'w', 'o', 'r', 'k', 's', '?']
+
+============================================
+Convert List of objects to string
+============================================
+
+
+>>> alist
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd',]
+
+
+>>> newstring=''.join(alist)
+>>> newstring
+
+
+
+
+========================================================
+Example of conversion between list of objects and string
+========================================================
+
+>>> aphrase="Won't you understand how this works?"
+>>> aphrase
+"Won't you understand how this works?"
+>>> alist=list(aphrase)
+>>> alist
+['W', 'o', 'n', "'", 't', ' ', 'y', 'o', 'u', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd', ' ', 'h', 'o', 'w', ' ', 't', 'h', 'i', 's', ' ', 'w', 'o', 'r', 'k', 's', '?']
+>>> ['W', 'o', 'n', "'", 't', ' ', 'y', 'o', 'u', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd', ' ', 'h', 'o', 'w', ' ', 't', 'h', 'i', 's', ' ', 'w', 'o', 'r', 'k', 's', '?']
+['W', 'o', 'n', "'", 't', ' ', 'y', 'o', 'u', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd', ' ', 'h', 'o', 'w', ' ', 't', 'h', 'i', 's', ' ', 'w', 'o', 'r', 'k', 's', '?']
+
+>>> 
+>>> for i in range(9):
+	alist.pop()
+
+	
+'?'
+'s'
+'k'
+'r'
+'o'
+'w'
+' '
+'s'
+'i'
+
+>>> for i in range(9):
+	alist.pop(0)
+
+	
+'W'
+'o'
+'n'
+"'"
+'t'
+' '
+'y'
+'o'
+'u'
+>>> alist.insert(0,'u')
+>>> alist
+['u', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd', ' ', 'h', 'o', 'w', ' ', 't', 'h']
+>>> for i in range(6):
+	alist.pop()
+
+	
+'h'
+'t'
+' '
+'w'
+'o'
+'h'
+>>> alist.insert(0,'i')
+>>> alist
+['i', 'u', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd', ' ']
+>>> alist.remove('u')
+>>> alist
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd', ' ']
+
+>>> alist.pop()
+' '
+>>> newstring=''.join(alist)
+>>> newstring
+'i understand'
