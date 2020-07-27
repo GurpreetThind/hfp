@@ -1,0 +1,54 @@
+===============
+Copying a DS
+===============
+
+===========================================================
+Assignement operator means two refrences to same DS
+Check below example:
+===========================================================
+
+>>> alist
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n', 'd']
+>>> nonsense=alist
+>>> nonsense.pop()
+'d'
+>>> alist
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n']
+
+============================================================
+Using FOR loop to copy between DS:
+============================================================
+>>> new_nonsense=[]
+>>> for i in alist:
+	new_nonsense.append(i)
+
+	
+>>> new_nonsense
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n']
+>>> 
+>>> 
+>>> new_nonsense.pop()
+'n'
+>>> new_nonsense
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a']
+>>> alist
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n']
+
+============================================================
+List comes with copy method
+============================================================
+
+>>> classic_copy=alist.copy()
+>>> alist
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n']
+>>> classic_copy
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n']
+>>> classic_copy.pop()
+'n'
+>>> alist
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't', 'a', 'n']
+>>> classic_copy.pop()
+'a'
+>>> classic_copy
+['i', ' ', 'u', 'n', 'd', 'e', 'r', 's', 't']
+
