@@ -1,0 +1,130 @@
+=============================
+Static Dictionary definition 
+=============================
+
+>>> person3 = {'Name': 'Ford Perfect', 'Gender': 'Male', 'Occupation': 'Researcher', 'Home Planet': 'Earth2'}
+>>> 
+>>> 
+>>> person3
+{'Name': 'Ford Perfect', 'Gender': 'Male', 'Occupation': 'Researcher', 'Home Planet': 'Earth2'}
+
+======================================
+Access row via key and square brackets 
+======================================
+>>> person3['Gender']
+'Male'
+
+======================================
+Growing Dictionary with Row 
+======================================
+
+>>> person3['Age']=33
+>>> person3
+{'Name': 'Ford Perfect', 'Gender': 'Male', 'Occupation': 'Researcher', 'Home Planet': 'Earth2', 'Age': 33}
+
+===============================
+Initializing Empty Dictionary
+===============================
+freq={}
+
+>>> freq['a']=0
+>>> freq['e']=0
+>>> freq['i']=0
+>>> freq['o']=0
+>>> freq['u']=0
+>>> freq
+{'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+
+==================================
+Incrementing dictionary counter 
+==================================
+
+
+>>> less={}
+>>> less['more']=0
+>>> less
+{'more': 0}
+
+>>> less['more']=less['more']+11
+>>> less
+{'more': 11}
+
+>>> less['more'] += 22
+>>> less
+{'more': 33}
+>>> less['more'] -= 22
+>>> less
+{'more': 11}
+>>> less['more'] *= 5
+>>> less
+{'more': 55}
+
+==================================
+Iteration over dictionary  
+==================================
+
+>>> for kv in freq:
+	print(kv)
+
+	
+a
+e
+i
+o
+u
+
+>>> for kv in freq:
+	print(freq[kv])
+
+	
+0
+0
+0
+0
+0
+================================
+Specifying the order via Sorted 
+================================
+>>> for kv in freq:
+	print(kv, 'appears',freq[kv], 'times in string')
+
+o appears 0 times in string
+u appears 0 times in string	
+a appears 0 times in string
+e appears 0 times in string
+i appears 0 times in string
+
+>>> for kv in sorted(freq):
+	print(kv, 'appears',freq[kv], 'times in string')
+
+	
+a appears 0 times in string
+e appears 0 times in string
+i appears 0 times in string
+o appears 0 times in string
+u appears 0 times in string
+
+================================================
+Using items() to iterate in for loop
+================================================
+
+>>> for k,v in sorted(freq.items()):
+	print(k, 'appears',v, 'times in string')
+
+	
+a appears 0 times in string
+e appears 0 times in string
+i appears 0 times in string
+o appears 0 times in string
+u appears 0 times in string
+
+
+>>> for k,v in sorted(freq.items()):
+	print(k, 'appears',freq[k], 'times in string')
+
+	
+a appears 0 times in string
+e appears 0 times in string
+i appears 0 times in string
+o appears 0 times in string
+u appears 0 times in string
