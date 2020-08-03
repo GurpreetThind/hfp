@@ -147,3 +147,49 @@ KeyError: 'apple'
 >>> 'apple' in fruits
 True
 
+===============================================
+Check membership via In operatior and if Loop 
+===============================================
+>>> if 'banana' in fruits:
+	fruits['banana'] += 10
+else:
+	fruits['banana'] = 10
+
+>>> print(fruits)
+{'apple': 5, 'banana': 10}
+
+
+==================
+Ternary Operator 
+==================
+
+>>> y=5
+>>> x=10 if y > 3 else 20
+>>> x
+10
+
+
+==================================================
+Using if / not in to initialize an dictionary key 
+==================================================
+
+>>> if 'pears' not in fruits:
+	fruits['pears']=0
+
+	
+>>> fruits['pears']+=15
+>>> fruits
+{'apple': 5, 'banana': 10, 'pears': 15}
+
+================================================================
+Setdefault to initalize dictionary Single line Initialization 
+================================================================
+
+>>> if 'pears' not in fruits:
+	fruits['pears']=0
+
+	
+>>> fruits['pears']+=15
+>>> fruits
+{'apple': 5, 'banana': 10, 'pears': 15}
+
