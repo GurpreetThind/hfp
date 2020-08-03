@@ -128,3 +128,22 @@ e appears 0 times in string
 i appears 0 times in string
 o appears 0 times in string
 u appears 0 times in string
+
+===================================
+Avoiding KeyError via in operator
+===================================
+
+>>> fruits={}
+>>> fruits['apple'] += 1
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    fruits['apple'] += 1
+KeyError: 'apple'
+
+
+
+>>> fruits={}
+>>> fruits['apple'] = 5
+>>> 'apple' in fruits
+True
+
