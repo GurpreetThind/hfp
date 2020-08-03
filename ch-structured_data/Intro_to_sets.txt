@@ -1,0 +1,81 @@
+=========================================
+Sets : Doesnot allow duplicate
+==========================================
+
+>>> vowel = {'a', 'e', 'i', 'o', 'u'}
+>>> vowels
+['a', 'e', 'i', 'o', 'u']
+>>> vowel
+{'u', 'e', 'a', 'i', 'o'}
+
+>>> vowels.append('u')
+>>> vowel = {'a', 'e', 'i', 'o', 'u', 'u'}
+>>> vowels
+['a', 'e', 'i', 'o', 'u', 'u']
+>>> vowel
+{'u', 'e', 'a', 'i', 'o'}
+
+>>> vowel.append('u')
+Traceback (most recent call last):
+  File "<pyshell#71>", line 1, in <module>
+    vowel.append('u')
+AttributeError: 'set' object has no attribute 'append'
+
+===========================
+Creating Set from Sequence
+===========================
+
+>>> vowels2=set('aeuuuiiioooooouu')
+>>> vowels2
+{'u', 'e', 'a', 'i', 'o'}
+
+==================
+Union operation
+==================
+
+>>> vowels=set('aeiou')
+>>> word="hello"
+>>> vowels
+{'u', 'e', 'a', 'i', 'o'}
+>>> word
+'hello'
+>>> 
+>>> 
+>>> u=vowels.union(set(word))
+>>> u
+{'u', 'e', 'a', 'l', 'i', 'h', 'o'}
+
+=============================
+Convert Set into Sorted list
+=============================
+>>> u_list = sorted(list(u))
+>>> u_list
+['a', 'e', 'h', 'i', 'l', 'o', 'u']
+
+
+=====================
+Difference operation
+=====================
+
+>>> vowels
+{'u', 'e', 'a', 'i', 'o'}
+>>> word
+'hello'
+>>> d=vowels.difference(set(word))
+>>> d
+{'u', 'i', 'a'}
+>>> {'u', 'i', 'a'}
+{'u', 'i', 'a'}
+>>> ran=set(word)
+>>> diff_set=ran.difference(vowels)
+>>> diff_set
+{'l', 'h'}
+
+
+=======================
+Intersection operation
+=======================
+
+>>> i=vowels.intersection(set(word))
+>>> i
+{'e', 'o'}
