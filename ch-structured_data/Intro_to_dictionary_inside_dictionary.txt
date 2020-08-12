@@ -1,0 +1,75 @@
+=============================
+Dictioanry Inside Dictioanry
+==============================
+
+>>> people={}
+>>> people['Ford']={'Occupation':'Researcher', 'Name':'Ford Perfect', 'Home Planet':'SKP', 'Gender':'Male'}
+>>> people
+{'Ford': {'Occupation': 'Researcher', 'Name': 'Ford Perfect', 'Home Planet': 'SKP', 'Gender': 'Male'}}
+>>> people['Arthur']={'Occupation':'Sandwich Maker', 'Name':'Arthur Dent', 'Home Planet':'Earth', 'Gender':'Male'}
+>>> people
+{'Ford': {'Occupation': 'Researcher', 'Name': 'Ford Perfect', 'Home Planet': 'SKP', 'Gender': 'Male'}, 'Arthur': {'Occupation': 'Sandwich Maker', 'Name': 'Arthur Dent', 'Home Planet': 'Earth', 'Gender': 'Male'}}
+>>> 
+>>> 
+>>> people['Trillian']={'Occupation':'Mathematician', 'Name':'Trica MacMillan', 'Home Planet':'Earth', 'Gender':'Female'}
+>>> people
+{'Ford': {'Occupation': 'Researcher', 'Name': 'Ford Perfect', 'Home Planet': 'SKP', 'Gender': 'Male'}, 'Arthur': {'Occupation': 'Sandwich Maker', 'Name': 'Arthur Dent', 'Home Planet': 'Earth', 'Gender': 'Male'}, 'Trillian': {'Occupation': 'Mathematician', 'Name': 'Trica MacMillan', 'Home Planet': 'Earth', 'Gender': 'Female'}}
+>>> 
+>>> 
+>>> 
+>>> people['Robot']={'Occupation':'Paranoid Android', 'Name':'Marvin', 'Home Planet':'Unknown', 'Gender':'Unknown'}
+>>> 
+>>> 
+>>> people
+{'Ford': {'Occupation': 'Researcher', 'Name': 'Ford Perfect', 'Home Planet': 'SKP', 'Gender': 'Male'}, 'Arthur': {'Occupation': 'Sandwich Maker', 'Name': 'Arthur Dent', 'Home Planet': 'Earth', 'Gender': 'Male'}, 'Trillian': {'Occupation': 'Mathematician', 'Name': 'Trica MacMillan', 'Home Planet': 'Earth', 'Gender': 'Female'}, 'Robot': {'Occupation': 'Paranoid Android', 'Name': 'Marvin', 'Home Planet': 'Unknown', 'Gender': 'Unknown'}}
+
+=============================
+Dictioanry in pretty form 
+=============================
+
+>>> people
+{'Ford': {'Occupation': 'Researcher', 'Name': 'Ford Perfect', 'Home Planet': 'SKP', 'Gender': 'Male'}, 'Arthur': {'Occupation': 'Sandwich Maker', 'Name': 'Arthur Dent', 'Home Planet': 'Earth', 'Gender': 'Male'}, 'Trillian': {'Occupation': 'Mathematician', 'Name': 'Trica MacMillan', 'Home Planet': 'Earth', 'Gender': 'Female'}, 'Robot': {'Occupation': 'Paranoid Android', 'Name': 'Marvin', 'Home Planet': 'Unknown', 'Gender': 'Unknown'}}
+
+
+
+>>> import pprint
+
+
+>>> pprint.pprint(people)
+{'Arthur': {'Gender': 'Male',
+            'Home Planet': 'Earth',
+            'Name': 'Arthur Dent',
+            'Occupation': 'Sandwich Maker'},
+ 'Ford': {'Gender': 'Male',
+          'Home Planet': 'SKP',
+          'Name': 'Ford Perfect',
+          'Occupation': 'Researcher'},
+ 'Robot': {'Gender': 'Unknown',
+           'Home Planet': 'Unknown',
+           'Name': 'Marvin',
+           'Occupation': 'Paranoid Android'},
+ 'Trillian': {'Gender': 'Female',
+              'Home Planet': 'Earth',
+              'Name': 'Trica MacMillan',
+              'Occupation': 'Mathematician'}}
+			  
+==================================================
+Accessing value from Dictioanry inside Dictioanry
+==================================================
+
+>>> people['Arthur']
+{'Occupation': 'Sandwich Maker', 'Name': 'Arthur Dent', 'Home Planet': 'Earth', 'Gender': 'Male'}
+
+
+>>> pprint.pprint(people['Arthur'])
+{'Gender': 'Male',
+ 'Home Planet': 'Earth',
+ 'Name': 'Arthur Dent',
+ 'Occupation': 'Sandwich Maker'}
+
+
+>>> pprint.pprint(people['Arthur']['Occupation'])
+'Sandwich Maker'
+
+Dictionary[key][key]
+

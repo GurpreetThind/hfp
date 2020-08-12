@@ -1,0 +1,53 @@
+========================
+Defining Tuple (, , ,)
+========================
+
+>>> vowels=['a','e','i','o','u']
+>>> type(vowels)
+<class 'list'>
+>>> vowerls_t=('a','e','i','o','u')
+>>> type(vowerls_t)
+<class 'tuple'>
+
+>>> vowels
+['a', 'e', 'i', 'o', 'u']
+>>> vowerls_t
+('a', 'e', 'i', 'o', 'u')
+
+========================
+Tuples are immutable
+========================
+>>> vowerls_t[2]='I'
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    vowerls_t[2]='I'
+TypeError: 'tuple' object does not support item assignment
+
+---------------------------------------------Update is not possible
+>>> vowerls_t
+('a', 'e', 'i', 'o', 'u')
+>>> vowerls_t[5]='k'
+Traceback (most recent call last):
+  File "<pyshell#25>", line 1, in <module>
+    vowerls_t[5]='k'
+TypeError: 'tuple' object does not support item assignment
+
+========================
+Single Object Tuple
+========================
+>>> t=('Python')
+>>> type(t)
+<class 'str'>
+>>> t2=('Python',)
+>>> type(t2)
+<class 'tuple'>
+>>> 
+>>> 
+>>> 
+>>> t
+'Python'
+>>> t2
+('Python',)
+
+
+
