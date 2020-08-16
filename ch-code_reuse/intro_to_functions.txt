@@ -1,0 +1,11 @@
+=================================
+Anatomy of Function
+=================================
+
+def and return are the key words
+
+Can have optional arguments 
+
+Contains code and Comments
+
+Comments can be # and triple-quoted """ Comment here """
