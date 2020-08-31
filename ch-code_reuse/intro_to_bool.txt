@@ -1,0 +1,36 @@
+==================================
+Boolean Evaluation of any object
+
+bool(object) -> bool
+==================================
+
+
+>>> bool(0)
+False
+>>> bool(0.0)
+False
+>>> bool('')
+False
+>>> bool([])
+False
+>>> bool({})
+False
+>>> bool(None)
+False
+>>> 
+>>> 
+>>> bool(1)
+True
+>>> bool(-1)
+True
+>>> bool(42)
+True
+>>> bool(0.0000000000000000000000000000000000000000000000000000000000001)
+True
+>>> bool('Panic')
+True
+>>> bool([42, 43, 44])
+True
+>>> bool({'q':1000, 'd':'8900010a'})
+True
+>>> 
